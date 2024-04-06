@@ -3,5 +3,13 @@ function plannerLaunch() {
 }
 
 function studyingLaunce() {
-    window.location.href = 'studying.html';
+    window.location.href = 'StudyingPage.html';
+}
+
+function createEvent(){
+    var nameofEvent = document.getElementById("userInput").value;
+    var startDate = document.getElementById("userInput").value;
+    var endDate = document.getElementById("userInput").value;
+
+    
 }
