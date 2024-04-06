@@ -11,5 +11,8 @@ function createEvent(){
     var startDate = document.getElementById("userInput").value;
     var endDate = document.getElementById("userInput").value;
 
-    
+
+}
+function returnHome(){
+    window.location.href = 'index.html';
 }
