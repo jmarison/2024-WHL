@@ -12,6 +12,15 @@ body{
 h5 {
     color: red;
     font-weight: 900;
+    font-size: xx-large;
 }
+
+div {
+    width: 320px;
+    height: 50px;
+    padding: 10px;
+    border: 5px gray;
+    margin: 0;
+  }
 
 
