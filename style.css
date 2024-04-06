@@ -1,12 +1,17 @@
 h1 {
-    color: saddlebrown;
+    color: rgb(139, 19, 69);
     text-align: center;
+    text-decoration: wavy;
 }
 
 body{
     color: lawngreen;
     text-align: center;
-    text-decoration: wavy;
+}
+
+h5 {
+    color: red;
+    font-weight: 900;
 }
 
 

@@ -1,11 +1,10 @@
-class Event {
-    constructor(nameofEvent, startDate, endDate) {
-        this.nameofEvent = nameofEvent;
-        this.startDate = startDate;
-        this.endDate = endDate;
+class Assignment {
+    constructor(nameofAssignment, dueDate) {
+        this.nameofAssignment = nameofAssignment;
+        this.dueDate = dueDate;
     }
 
-    fullEvent() {
-        return this.nameofEvent + " starts on " + this.startDate + " and ends on " + this.endDate;
+    fullAssignment() {
+        return this.nameofAssignment + " starts on " + this.startDate + " and ends on " + this.dueDate;
     }
 }

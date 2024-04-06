@@ -4,15 +4,39 @@
             <title> Monthly Planner  </title>
             <link rel="stylesheet" href="style.css">
         </head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment List</title>
             <body>  
             <script src="Functionality.js"></script>
-            <h1>Study Material</h1>
-            <p>Designed to help prepare you for your upcoming assessments or projects.</p>
-            <input type="text" placeholder="Name of Event" id="userInput">
-            <input type="text" placeholder="Start date" startDate="userInput">
-            <input type="text" placeholder="End date" endDate="userInput">
-            <button id = "addEvent" class="btn-eventCreation" onclick="createEvent()">Event</button>
-            <button id = "returnHome" class="btn-homePage" onclick="returnHome()">Go Home</button>
-        
+            <h1>Planner</h1>
+            <h5>Work in Progress &#10071</h5>
+            <p>Used to list assignments and their due dates to help you study.</p>
+            <label for="tbuser">Assignments:</label>
+            <input type="text" placeholder="Enter name of assignment" id="tbuser" maxlength = 20;>
+            <input type="button" id="asnbtn" value="Create">
+
+
+            <label for="secd">Date:</label>
+            <input type="text" placeholder="Due Date" id="datebtn" maxlength=20;>
+
+            <button id = "returnHome" onclick="returnHome()">Go Home</button>
+
+
+            <p class="output" id="output1"></p>
+
+
+            <script>
+                const txt1 = document.getElementById('tbuser');
+                const asnbtn = document.getElementById('asnbtn');
+                const out1 = document.getElementById('output1');               
+
+                function fun1(){
+                  out1.innerHTML = txt1.value;
+                }
+                
+                asnbtn.addEventListener('click',fun1);
+
+            </script>
         </body>
     </html>

@@ -1,25 +1,31 @@
-var currentEvents = [];
+var currentAssignments = [];
 function plannerLaunch() {
     window.location.href = 'PlannerPage.html';
 }
 
-function studyingLaunce() {
+function studyingLaunch() {
     window.location.href = 'StudyingPage.html';
 }
 
-function createEvent(){
-    var nameofEvent = document.getElementById("userInput").value;
-    var startDate = document.getElementById("userInput").value;
-    var endDate = document.getElementById("userInput").value;
+function createAssignment(){
+    var nameofAssignment = document.getElementById("userInput").value;
+    var dueDate = document.getElementById("userInput").value;
 
-    var event = new Events(nameofEvent, startDate, endDate);
-    currentEvents.add(event);
-
+    var Assignment = new Assignments(nameofAssignment, dueDate);
+    currentAssignments.add(Assignment);
+    generateOrderedList();
 }
 function returnHome(){
     window.location.href = 'index.html';
 }
 
 function generateOrderedList() {
-    
+    var ul = document.createElement("ul");
+    for (var i = 0; i < currentAssignments.length; i++){
+        var li = document.createElement("li");
+        li.textContent = currentAssignments[i];
+        ul.appendChild(li);
+    }
+    var container = document.getElementById("listContainer");
+    container.appendChild(ul);
 }
