@@ -1,11 +1,11 @@
 h1 {
-    color: rgb(139, 19, 69);
+    color: rgb(144, 144, 144);
     text-align: center;
     text-decoration: wavy;
 }
 
 body{
-    color: lawngreen;
+    color: rgb(144, 144, 144);
     text-align: center;
     background-image: url('background.jpg');
     background-size: cover;
