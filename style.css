@@ -21,8 +21,6 @@ h5 {
 }
 
 .center {
-    top: 50%;
-    left: 50%;
     position: absolute;
     text-align: center;
     width: 320px;
